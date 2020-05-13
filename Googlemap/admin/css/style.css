@@ -1,0 +1,42 @@
+#map {
+    width: 78%;
+    height: 400px;
+    background-color: grey;
+
+  }
+#box{
+  width: 20%;
+  height: 100%;
+  background:white;
+  float: right;
+  margin: 0px 10px 10px 10px;
+  border-radius: 10px;
+  border: tomato;
+}
+
+
+.container{
+  width: 500px;
+  height: 500px;
+  padding: 15px;
+  position: relative;
+}
+/*//////////////*/
+#floating-panel {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+.form_container{
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+
+}
