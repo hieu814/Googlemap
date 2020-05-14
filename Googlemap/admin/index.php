@@ -2,19 +2,9 @@
 include_once 'header.php';
 ?>
 <div>
-<div id="box">
-      <div class="form_container">
-        <div >
-                      <form action="search.php" method="get">
-                          Search: <input type="text" name="search" />
-                          <input type="submit" name="find" value="search" />
-                      </form>
-                  </div>
-                  
-      </form>
-      </div>
+    <div id="box">
+    <div id="add"></div>
     </div>
-
     <div id="map"></div>
     <script src="js/function.js"></script>
     <script async defer

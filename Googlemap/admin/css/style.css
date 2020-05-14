@@ -2,6 +2,7 @@
     width: 78%;
     height: 400px;
     background-color: grey;
+    float: left;
 
   }
 #box{
@@ -9,6 +10,14 @@
   height: 100%;
   background:white;
   float: right;
+  margin: 0px 10px 10px 10px;
+  border-radius: 10px;
+  border: tomato;
+}
+#infor{
+  width: 80%;
+  height: 100%;
+  background:white;
   margin: 0px 10px 10px 10px;
   border-radius: 10px;
   border: tomato;

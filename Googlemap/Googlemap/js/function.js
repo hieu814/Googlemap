@@ -29,6 +29,8 @@ var customLabel = {
           var name = markerElem.getAttribute('name');
           var address = markerElem.getAttribute('address');
           var type = markerElem.getAttribute('type');
+          var image = markerElem.getAttribute('image');
+          var description = markerElem.getAttribute('description');
           var point = new google.maps.LatLng(
               parseFloat(markerElem.getAttribute('lat')),
               parseFloat(markerElem.getAttribute('lng')));
@@ -51,12 +53,17 @@ var customLabel = {
           marker.addListener('click', function() {
             infoWindow.setContent(infowincontent);
             infoWindow.open(map, marker);
+            var inforstring ='<b>'+ name+'</b>'+
+            '</br>'+'<img src="'+image+'" alt="" width="80%" height="80%">'+
+            '<a>'+description+'</a>';
+            document.getElementById("infor").innerHTML = inforstring;
           });
         });
       });
     }
 
 //add marker
+
     function placeMarker(position, map) {
       var marker = new google.maps.Marker({
           position: position,

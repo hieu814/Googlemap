@@ -61,6 +61,14 @@ $connection->close();
             <th>type:</th>
             <td><input type="text" name="type" value="<?php echo $row["type"];?>"></td>
         </tr>
+        <tr>
+            <th>image link:</th>
+            <td><input type="text" name="image" value="<?php echo $row["image"];?>"></td>
+        </tr>
+        <tr>
+            <th>type:</th>
+            <td><input type="text" name="description" value="<?php echo $row["description"];?>"></td>
+        </tr>
 
     </table>
     <button type="submit">Gửi</button>

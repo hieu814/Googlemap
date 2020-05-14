@@ -42,6 +42,8 @@ while ($row = @mysql_fetch_assoc($result)){
   $newnode->setAttribute("lat", $row['lat']);
   $newnode->setAttribute("lng", $row['lng']);
   $newnode->setAttribute("type", $row['type']);
+  $newnode->setAttribute("image", $row['image']);
+  $newnode->setAttribute("description", $row['description']);
 }
 ini_set('memory_limit', '-1');
 echo $dom->saveXML();

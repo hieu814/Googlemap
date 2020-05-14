@@ -11,10 +11,19 @@
   float: right;
   margin: 0px 10px 10px 10px;
   border-radius: 10px;
-  border: tomato;
+  border:1px tomato;
 }
+#infor{
+  margin: 0px 10px 10px 10px;
+  border-radius: 10px;
+  border:5px tomato;
+}
+a{
 
-
+  width:50px;
+  height:200px;
+  word-wrap:break-word;
+}
 .container{
   width: 500px;
   height: 500px;

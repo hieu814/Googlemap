@@ -77,6 +77,15 @@ var customLabel = {
               "<tr>" +
               "<th>Địa chỉ:</th>" +
               "<td><input type='text' name='address' value=''></td>" +
+              "</tr>" +
+              "<tr>" +
+              "<th>Image link:</th>" +
+              "<td><input type='text' name='image' value=''></td>" +
+              "</tr>" +
+              "<th>Mô tả:</th>" +
+              "<td><input type='textarea' rows='10' cols='50' name='description' value=''></td>" +
+              
+              
           "</tr>"+  
           "<tr>"+
           "<td><input type='hidden' name='lat' value='"+position.lat()+"'></td>" +
@@ -98,6 +107,7 @@ var customLabel = {
   });
   marker.addListener('click', function() {
     infowindow.open(map, marker);
+    //document.getElementById("add").innerHTML = z;
   });
       map.panTo(position);
   }

@@ -12,9 +12,10 @@ $adress = $_POST['address'];
 $lat = $_POST['lat']; 
 $lng = $_POST['lng'];
 $type = $_POST['type'];
-
+$image = $_POST['image'];
+$description = $_POST['description'];
     //Code xử lý, insert dữ liệu vào table
-    $sql = "UPDATE markers SET name='$name',address='$adress',lat='$lat',lng='$lng',type='$type' where  id='$id'";
+    $sql = "UPDATE markers SET name='$name',address='$adress',lat='$lat',lng='$lng',type='$type',description='$description',image='$image' where  id='$id'";
 
     if (mysqli_query($connection, $sql)) {
         header("location:../admin/index.php");

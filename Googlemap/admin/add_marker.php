@@ -12,10 +12,12 @@ $adress = $_POST['address'];
 $lat = $_POST['lat']; 
 $lng = $_POST['lng'];
 $type = $_POST['type'];
+$image = $_POST['image'];
+$description = $_POST['description'];
 
     //Code xử lý, insert dữ liệu vào table
-    $sql = "INSERT INTO markers(id, name, address, lat, lng,type)
-    VALUES('','$name','$adress','$lat','$lng','$type')";
+    $sql = "INSERT INTO markers(id, name, address, lat, lng,type,description,image)
+    VALUES('','$name','$adress','$lat','$lng','$type','$description','$image')";
 
     if (mysqli_query($connection, $sql)) {
         header("location:../admin/index.php");
