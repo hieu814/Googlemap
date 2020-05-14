@@ -51,7 +51,7 @@ include_once 'header.php';
                             echo "<td>".$row["lat"]."</td>";
                             echo "<td>".$row["lng"]."</td>";
                             echo "<td>".$row["type"]."</td>";
-                            echo "<td><a href='Delete_point.php?id=".$row['id']."'>Xóa</a><a href='Update.php?id=".$row['id']."'>Sửa</a></td>";
+                            echo "<td><a href='Delete_marker.php?id=".$row['id']."'>Xóa</a><a href='Update.php?id=".$row['id']."'>Sửa</a></td>";
 
                             echo "</tr>";
                          

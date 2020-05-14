@@ -9,7 +9,7 @@ var customLabel = {
 
     function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
-      center: new google.maps.LatLng(-33.863276, 151.207977),
+      center: new google.maps.LatLng(21.022966, 105.846092),
       zoom: 12
     });
     ////event
@@ -53,8 +53,11 @@ var customLabel = {
           marker.addListener('click', function() {
             infoWindow.setContent(infowincontent);
             infoWindow.open(map, marker);
-            var inforstring ='<b>'+ name+'</b>'+
-            '</br>'+'<img src="'+image+'" alt="" width="80%" height="80%">'+
+            var inforstring =
+            '</br>'+'<img src="'+image+'" alt="" width="100%" height="80%">'+
+            '<b id="name">'+ name+'</b></br>'+
+            '<a>'+ address+'</a></br>'+
+            '<a>Mô tả:</a></br>'+
             '<a>'+description+'</a>';
             document.getElementById("infor").innerHTML = inforstring;
           });

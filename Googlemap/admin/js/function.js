@@ -9,7 +9,7 @@ var customLabel = {
 
     function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
-      center: new google.maps.LatLng(-33.863276, 151.207977),
+      center: new google.maps.LatLng(21.022966, 105.846092),
       zoom: 12
     });
     ////event
@@ -81,7 +81,7 @@ var customLabel = {
               "<tr>" +
               "<th>Image link:</th>" +
               "<td><input type='text' name='image' value=''></td>" +
-              "</tr>" +
+              "<tr>" +
               "<th>Mô tả:</th>" +
               "<td><input type='textarea' rows='10' cols='50' name='description' value=''></td>" +
               
@@ -107,7 +107,7 @@ var customLabel = {
   });
   marker.addListener('click', function() {
     infowindow.open(map, marker);
-    //document.getElementById("add").innerHTML = z;
+    document.getElementById("add").innerHTML = z;
   });
       map.panTo(position);
   }
